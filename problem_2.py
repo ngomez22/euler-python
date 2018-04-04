@@ -10,5 +10,4 @@ def Fibonacci():
         yield a + b
         a, b = b, a + b
 
-f = Fibonacci()
-print(sum([x for x in f if x % 2 == 0]))
+print(sum([x for x in Fibonacci() if x % 2 == 0]))
